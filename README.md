@@ -61,6 +61,7 @@ table
 now go the DB browser for sqlite and make that have the tables you created 
 
 9. install express so you can run the server
+10.install helmet , npm install helmet --save useful for the header http
 
 10.install npm install --save-dev nodemon
 nodemon will run you server on every change , useful for the development environment 
