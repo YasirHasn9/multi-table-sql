@@ -12,6 +12,15 @@ router.get("/", async (req, res, next) => {
   }
 });
 
-
+router.post("/", async (req, res, next) => {
+  try {
+    const [id] = await db("users").insert(req.body);
+    const user = await db("users")
+      .where({ id })
+      .first();
+    res.json(user);
+  } catch (err) {
+    next(err);
+  }
 });
 module.exports = router;
