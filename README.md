@@ -68,3 +68,8 @@ now go the DB browser for sqlite and make that have the tables you created
 11. create a new request using POST to create a new user
 
 --- now go and make a new request you will an array with a new user
+
+12. make a new get request to get a single user "/:id"
+
+13. make a new get request to get the posts for each user "/:id/posts"
+    -- you will get an empty posts because there is no posts
