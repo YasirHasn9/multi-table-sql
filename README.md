@@ -65,4 +65,6 @@ now go the DB browser for sqlite and make that have the tables you created
 10. import the db base in the user-router and then make your first request
     -- you will get an empty array because we have 0 user
 
-11. create a new request using post to create a new user
+11. create a new request using POST to create a new user
+
+--- now go and make a new request you will an array with a new user

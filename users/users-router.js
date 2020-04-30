@@ -12,6 +12,18 @@ router.get("/", async (req, res, next) => {
   }
 });
 
+router.get("/:id", async (req, res, next) => {
+  try {
+    const user = await db("users")
+      .where({ id: req.params.id })
+      .first();
+    res.json(user);
+  } catch (err) {
+    console.log(err);
+    next(err);
+  }
+});
+
 router.post("/", async (req, res, next) => {
   try {
     const [id] = await db("users").insert(req.body);

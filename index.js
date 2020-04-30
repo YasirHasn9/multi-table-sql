@@ -1,6 +1,6 @@
 const express = require("express");
 const helmet = require("helmet");
-const userRouter = require("./users/users-router")
+const userRouter = require("./users/users-router");
 const server = express();
 
 server.use(express.json());
@@ -12,7 +12,13 @@ server.get("/", (req, res) => {
   });
 });
 
-server.use("/users" ,userRouter)
+server.use("/users", userRouter);
+
+server.use((err, req, res, next) => {
+  res.status(500).json({
+    message: "Something went wrong with server"
+  });
+});
 
 server.listen(8080, () => {
   console.log("http://localhost:", 8080);
