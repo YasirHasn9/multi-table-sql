@@ -1,0 +1,24 @@
+{
+  "name": "multi-table-sql",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/YasirHasn9/multi-table-sql.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/YasirHasn9/multi-table-sql/issues"
+  },
+  "homepage": "https://github.com/YasirHasn9/multi-table-sql#readme",
+  "dependencies": {
+    "knex": "^0.21.1",
+    "sqlite3": "^4.2.0"
+  }
+}
